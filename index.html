@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/e4c726126a.js" crossorigin="anonymous"></script>
+        <title>Book Library</title>
+    </head>
+    <body>
+        <div class="input-box">
+            <h1><i class="fas fa-book-reader"></i>BOOK LIBRARY</h1>
+            <form class="form" onsubmit="return false">
+                <label>Book Title</label>
+                <input type="text" id="book-title" />
+                <label>Book Id</label>
+                <input type="text" id="book-id" />
+                <label>Category</label>
+                <select id="category">
+                    <option selected value="Select Category">Select Category</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Historic">Historic</option>
+                    <option value="Scientific">Scientific</option>
+                    <option value="Hacking">Hacking</option>
+                    <option value="Space">Space</option>
+                </select>
+                <input type="submit" value="Add" id="submit" class="submit" />
+            </form>
+        </div>
+
+        <table class="output">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Book Title</th>
+                    <th>Book Id</th>
+                    <th>Book Category</th>
+                    <th><i class="fas fa-trash-alt"></i></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>

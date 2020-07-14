@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    overflow-X: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.input-box h1{
+    font-size: 4.3em;
+    margin: 0 auto;
+    margin-top: -70px;
+    color: #0c2461;
+    text-shadow: 2px 10px 10px #2c2c54;
+}
+.input-box i{
+    margin: 0 20px;
+    color: #0c2461;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+.form input{
+    font-size: 1em;
+    height: 20px;
+    margin: 15px 0;
+    padding: 5px;
+    outline: none;
+}
+.form select{
+    margin: 15px 0;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+}
+.form .submit{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background: #0c2461;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.output{
+    margin: 10px 180px;
+    width: 1000px;
+}
+.output thead tr th{
+    width: 300px;
+    background: #0c2461;
+    color: #fff;
+    padding: 5px 0;
+    font-weight: lighter;
+}
+.output thead tr th:first-child{
+    width: 60px;
+}
+.output thead tr th:last-child{
+    width: 40px;
+}
+.output thead tr .fa-trash-alt{
+    color: #fff;
+    cursor: auto;    
+}
+.output tbody tr{
+    text-align: center;
+}
+.output tbody tr:nth-child(odd){
+    background: #8395a7;
+}
+.output tbody tr:nth-child(even){
+    background: #c8d6e5;
+}
+.output tbody tr td{
+    width: 240px;
+    padding: 5px 0;
+    font-weight: lighter;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output tbody tr td:first-child{
+    width: 60px;
+}
+.output tbody tr td:last-child{
+    width: 40px;
+}
+
+.fa-trash-alt{
+    color: #c23616;
+    cursor: pointer;
+}
